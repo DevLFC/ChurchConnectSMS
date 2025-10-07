@@ -1,0 +1,40 @@
+Create a comprehensive Church SMS Connect application for managing church members, tracking attendance, and sending bulk SMS messages. The app should have the following features:
+
+Core Features:
+
+Member Management - Add, edit, delete church members with fields: name, phone, gender, department, status (Active/Inactive). Include CSV import functionality.
+
+Attendance Tracking - Mark members as Present or Absent for each service date. Show statistics (total members, present count, absent count). Allow selecting different service dates.
+
+SMS Templates - Create customizable SMS templates for present and absent members with placeholders like {{name}}, {{department}}, {{phone}}.
+
+Multi-Provider SMS Support - Support multiple SMS providers including:
+
+BulkSMSNigeria (POST method with API token authentication)
+NigeriaBulkSMS (GET method with username/password authentication)
+Allow adding custom providers with configurable endpoints, authentication methods, and request formats
+SMS History - Log all sent messages with delivery status, recipient details, and timestamps.
+
+Dashboard - Show overview statistics: total members, present/absent this month, SMS sent. Include attendance trends chart and recent SMS activity.
+
+Settings Page - Configure SMS providers with templates and examples for different provider types.
+
+Implementation Guide - Provide complete backend code examples for Node.js and Django to integrate with SMS APIs.
+
+Design Requirements:
+
+Use purple and gold/orange color scheme fitting for church theme
+Clean, modern, professional layout
+Fully responsive (mobile and desktop)
+Smooth animations using framer-motion
+Sidebar navigation with icons
+Beautiful gradient backgrounds
+Technical Details:
+
+Use shadcn/ui components
+Include proper entity schemas for Member, Attendance, SMSLog, SMSTemplate, SMSProvider
+Show clear distinction between GET and POST API methods
+Support both API key and username/password authentication
+Include provider templates for quick setup
+Add comprehensive implementation documentation since SMS sending requires backend functions
+Make it production-ready with proper error handling, loading states, and user-friendly messaging.

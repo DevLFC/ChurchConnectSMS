@@ -1,0 +1,105 @@
+🧭 1. Departmental Sorting & Smart Search
+
+Add sorting and filtering options for the attendance and member list by:
+
+Date
+
+Department
+
+Gender
+
+Alphabetical order (A–Z / Z–A)
+
+Add a search bar for real-time lookup by name, phone number, or department.
+
+Include both List View and Grid View options for member and attendance display.
+
+✅ 2. Attendance Auto-Integration with SMS Page
+
+When attendance is marked, automatically pass the present and absent data to the “Send SMS” page.
+
+The SMS page should auto-select the right recipients:
+
+Those present for “Thanks for joining us today”
+
+Those absent for “We missed you in service today”
+
+This eliminates the need for manual checkbox selection.
+
+👑 3. Department Leadership Access Structure
+
+Department leaders should:
+
+Only see and manage their department’s members and reports.
+
+Be able to log attendance and view birthdays of their members.
+
+Not access API, balance, or system settings.
+
+Pastors, Admins, and Secretaries can:
+
+View and manage all departments and members.
+
+See each department’s leader name and their attendance report submission.
+
+View reports filtered by department or leader.
+
+Have full oversight across the entire church structure.
+
+🗓️ 4. Automatic Birthday SMS System
+
+The app should automatically send birthday SMS messages daily at 6 AM.
+
+Birthdays stored as MM-DD or YYYY-MM-DD.
+
+If year is missing, it still works fine.
+
+Use default birthday message:
+
+Happy Birthday {{name}}!
+May this new year overflow with joy and grace.
+– Life of Faith Church 💛
+
+Admins, Secretaries, and Pastors can:
+
+Edit templates
+
+View upcoming birthdays
+
+Pause or modify automatic sending
+
+Department leaders can only view birthdays of their department members.
+
+💬 5. SMS Delivery Report Fix
+
+The SMS delivery reporting system should match the real NigeriaBulkSMS portal status.
+
+When sending messages:
+
+Save each message_id from NigeriaBulkSMS.
+
+Query delivery status periodically via:
+
+https://portal.nigeriabulksms.com/api/report/?username=...&password=...&message_id=...
+
+
+Update each message log with:
+
+Delivered ✅
+
+Failed ❌
+
+Pending ⏳
+
+Ensure the in-app report no longer marks Delivered messages as Failed when they are actually delivered.
+
+💰 6. NigeriaBulkSMS Balance Fetch Integration
+
+Automatically fetch SMS credit balance from:
+
+https://portal.nigeriabulksms.com/api/?username=EMAIL&password=PASSWORD&balance=true
+
+
+Sync every 6–12 hours, or when admin dashboard loads.
+
+Display in dashboard for Admins, Secretaries, and Pastors only:

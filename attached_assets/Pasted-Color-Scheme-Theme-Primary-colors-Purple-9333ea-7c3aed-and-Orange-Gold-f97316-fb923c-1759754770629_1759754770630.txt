@@ -1,0 +1,74 @@
+Color Scheme & Theme:
+
+Primary colors: Purple (#9333ea, #7c3aed) and Orange/Gold (#f97316, #fb923c)
+Background: Gradient from purple-50 via white to orange-50
+Accent gradients: Use "from-purple-600 to-purple-700" for primary buttons
+Church-themed with elegant, spiritual feel
+Layout Structure:
+
+Sidebar navigation with shadcn/ui Sidebar component
+Sidebar header with church icon in gradient purple background
+Navigation items with icons (LayoutDashboard, Users, UserCheck, MessageSquare, History, Settings, Code)
+Active page indicator: gradient purple background with white text and shadow
+Hover states: purple-50 background
+Mobile: collapsible sidebar with trigger button
+Component Styling:
+
+Cards: White/80 opacity with backdrop-blur-sm, purple-200 borders
+
+Stats Cards:
+
+Gradient icon backgrounds (from-purple-500 to-purple-600, from-green-500 to-green-600, etc.)
+Large 4xl font for numbers
+gradient circles in top-right corner
+Forms:
+
+Purple-200 borders with purple-400 focus states
+Labels with proper spacing
+Gradient backgrounds for form sections
+Tables:
+
+Header row: gradient from-purple-50 to-orange-50
+Hover rows: purple-50/50 background
+Avatar circles: gradient from-purple-400 to-orange-400
+Badges & Status:
+
+Present/Active: green-100 background, green-800 text, green-200 border
+Absent/Inactive: orange-100 background, orange-800 text, orange-200 border
+Status badges with icons (CheckCircle, XCircle, Clock)
+Buttons:
+
+Primary: "bg-gradient-to-r from-purple-600 to-purple-700 hover:from-purple-700 hover:to-purple-800"
+Success: "from-green-600 to-green-700"
+Outline: border-purple-200 with hover:bg-purple-50
+Icon buttons with lucide-react icons
+Animations:
+
+framer-motion for page transitions
+initial={{ opacity: 0, y: 20 }}, animate={{ opacity: 1, y: 0 }}
+Stagger animations for lists (delay: index * 0.05)
+Hover effects: shadow-lg transitions
+Typography:
+
+Page titles: text-3xl font-bold text-gray-900
+Subtitles: text-gray-600
+Section headers: text-lg font-semibold
+Code blocks: bg-gray-900 with green-400 or gray-100 text
+Spacing & Layout:
+
+Consistent p-6 md:p-8 for page padding
+space-y-6 between major sections
+gap-4 or gap-6 for grid layouts
+Rounded corners: rounded-lg, rounded-xl for cards
+Special Elements:
+
+
+Grid layouts: grid-cols-1 md:grid-cols-2 lg:grid-cols-3 lg:grid-cols-4
+Flex direction changes: flex-col md:flex-row
+Hidden mobile elements: md:hidden or hidden md:block
+Mobile-first approach with breakpoints
+
+Lucide React icons throughout
+Church icon in header
+Contextual icons for each navigation item and card
+Status icons (CheckCircle, XCircle, Clock) with color coding
